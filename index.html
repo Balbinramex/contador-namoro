@@ -4,50 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contador de Namoro</title>
-  <!-- Link para o CSS do Bootstrap -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Link para um CSS personalizado (opcional) -->
-  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Navbar do Bootstrap (Exemplo) -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Nosso Amor</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
-      </ul>
+  <div class="container">
+    <div class="photo">
+      <img src="DERIC E GISELY 01.jpg" alt="Foto de vocês dois">
     </div>
-  </nav>
+    <div class="content">
+      <h1>Deric e Gisely</h1>
+      <p class="intro">Desde o primeiro momento em que te vi, algo mudou em mim...</p>
+      
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3U4isOIWM3VvDubwSI3y7a?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
-  <!-- Conteúdo Principal -->
-  <div class="container mt-5 text-center">
-    <h1 class="text-primary">Contador de Dias de Namoro</h1>
-    <p class="lead">Estamos juntos há:</p>
-    <!-- Elemento para o contador (estilizado com Bootstrap) -->
-    <div class="alert alert-success" role="alert">
-      <h2 id="contador">0 dias</h2>
+      <div class="timer">
+        <h2>Juntos há</h2>
+        <div class="time-box">
+          <span id="years">01</span>
+          <span>anos</span>
+        </div>
+        <div class="time-box">
+          <span id="days">308</span>
+          <span>dias</span>
+        </div>
+        <div class="time-box">
+          <span id="hours">22</span>
+          <span>horas</span>
+        </div>
+        <div class="time-box">
+          <span id="minutes">06</span>
+          <span>minutos</span>
+        </div>
+        <div class="time-box">
+          <span id="seconds">52</span>
+          <span>segundos</span>
+        </div>
+      </div>
     </div>
-    <!-- Botão estilizado com Bootstrap -->
-    <button class="btn btn-lg btn-info mt-3" onclick="calcularDias()">Atualizar Contador</button>
   </div>
-
-  <!-- Script para cálculo do contador (adapte com sua lógica) -->
-  <script>
-    function calcularDias() {
-      const dataInicio = new Date("YYYY-MM-DD"); // Coloque a data de início do namoro
-      const hoje = new Date();
-      const diasJuntos = Math.floor((hoje - dataInicio) / (1000 * 60 * 60 * 24));
-      document.getElementById("contador").innerText = `${diasJuntos} dias`;
-    }
-    calcularDias();
-  </script>
-
-  <!-- JavaScript do Bootstrap -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-</body>
+  <script src="script.js"></script>
 </html>
